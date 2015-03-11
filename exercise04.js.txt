@@ -1,0 +1,24 @@
+function select(data, key, values) {
+	var risultato = [];
+	var oggetto;
+	for(var i = 0; i < data.length; i++){
+		oggetto = data[i];
+		for(var j = 0; j < values.length; j++) {
+			if(values[j] === oggetto[key])
+				risultato.push(oggetto);
+		}
+	}
+	return risultato;	
+}
+var data = [
+  {id:'01', name:'duffy'},
+  {id:'02', name:'michey'},
+  {id:'03', name:'donald'},
+  {id:'04', name:'goofy'},
+  {id:'05', name:'minnie'},
+  {id:'06', name:'scrooge'}
+];
+var key = 'name';
+var values = ['goofy', 'scrooge'];
+
+select(data,key,values)

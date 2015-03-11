@@ -1,0 +1,15 @@
+function dispari() {
+	var num = Math.random() * 100;
+	num = Math.round(num);
+	if(num > 40){
+		for(var i = 40; i <= num; i++){
+			if(i % 2 !== 0)
+				console.log(i);
+		}
+	}
+	else {
+		for(var i = 40; i>=num; i--){
+				console.log(i);
+		}
+	}
+}

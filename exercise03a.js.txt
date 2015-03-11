@@ -1,0 +1,5 @@
+function maiuscolo(n){
+	 var res = n.charAt(0).toUpperCase() 
+	 res+= n.slice(1);
+	 return res;
+}

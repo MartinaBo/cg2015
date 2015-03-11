@@ -1,0 +1,8 @@
+function soloPari() {
+	var numero = Math.random() * 100;
+	numero = Math.round(numero);
+	for(var i = 0; i <= numero; i++){
+		if(i % 2 === 0)
+			console.log(i);
+	}
+}

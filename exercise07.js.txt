@@ -1,0 +1,10 @@
+function dispariMaggiori40() {
+	var numero = Math.random() * 100;
+	numero = Math.round(numero);
+	if(numero > 40){
+		for(var i = 40; i <= numero; i++){
+			if(i % 2 !== 0)
+				console.log(i);
+		}
+	}
+}

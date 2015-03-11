@@ -1,0 +1,18 @@
+
+function soloPari(ar){
+for(var i=0;i<=ar.length;i++){
+ if(((ar[i])%2)!==0){
+ ar.splice(i,1);
+}}
+return ar;
+}
+
+function f(n){
+var a=[];
+for(var i=0;i<n;i++){
+	a[i]=i+1;
+	}
+	var result=[];
+	result= soloPari(a);
+	return result;
+}

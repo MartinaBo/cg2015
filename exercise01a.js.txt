@@ -1,0 +1,8 @@
+
+function f(n){
+var a=[];
+for(var i=0;i<n;i++){
+	a[i]=i+1;
+	}
+	return a;
+}

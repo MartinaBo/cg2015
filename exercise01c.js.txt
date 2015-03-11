@@ -1,0 +1,27 @@
+
+function soloPari(ar){
+for(var i=0;i<=ar.length;i++){
+ if(((ar[i])%2)!==0){
+ ar.splice(i,1);
+}}
+return ar;
+}
+
+function duplica(arr){
+	for(var i=0;i<=arr.length;i++){
+      arr[i]= a;
+      }
+	return prova;
+}
+
+function f(n){
+var result=[];
+var doppio= [];
+var a=[];
+for(var i=0;i<n;i++){
+	a[i]=i+1;
+	}
+result= soloPari(a);
+doppio= duplica(result);
+return doppio;
+}

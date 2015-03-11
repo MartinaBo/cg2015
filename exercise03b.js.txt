@@ -1,0 +1,1 @@
+function maiuscolo(n){	 var res = n.charAt(0).toUpperCase() 	 res+= n.slice(1);	 return res;}function tuttoMaiuscolo(n){	 var a = n.split(" ");	 var result= a.map(maiuscolo);	 var finale= result.join(" ");	 return finale;}

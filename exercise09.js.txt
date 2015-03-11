@@ -1,0 +1,16 @@
+var massimo = function(a, b){
+	return a - b;
+};
+
+function random() {
+	var array = [];
+	var numero = Math.random() * 100;
+	numero = Math.round(numero);
+	for(var i = 0; i <numero; i++){
+		var numero2 = Math.random() * 100;
+		numero2 = Math.round(numero2);
+		array.push(numero2);
+	}
+	array.sort(massimo());
+	return array[array.length-1];
+};
