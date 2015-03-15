@@ -1,0 +1,8 @@
+
+function Bingo(){
+	this.secret_number = Math.floor(Math.random()*10) + 1;
+}
+
+Bingo.prototype.guess = function(numero){
+	return this.secret_number === numero;
+}

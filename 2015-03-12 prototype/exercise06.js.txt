@@ -1,0 +1,44 @@
+(function() {
+
+function Album(cantante,album){
+  this.cantante=cantante;
+  this.album=album;
+}
+
+Album.prototype.play=function(){
+  console.log("Playing"+" "+this.cantante+" "+this.album);
+}
+
+function MusicBox(){
+  this.array=[];
+}
+MusicBox.prototype.addAlbum = function (){
+  for(var i = 0; i< arguments.length; i++)
+    this.array.push(arguments[i]);
+}
+
+MusicBox.prototype.favoriteAlbum= function(){
+return this.array[0];
+  
+}
+Album.prototype.toString = function(){
+    return this.cantante + " - " + this.album;
+  }
+
+  var box = new MusicBox();
+  var a1 = new Album("The Who", "Tommy");
+  var a2 = new Album("Tom Waits", "Closing Time");
+  var a3 = new Album("John Cale", "Paris 1919");
+  var favorite;
+
+ box.addAlbum(a1, a2, a3);
+
+  a1.play() ; // prints "Playing The Who - Tommy"
+  a2.play(); // prints "Playing Tom Waits - Closing Time"  
+  a1.play(); // prints "Playing The Who - Tommy"
+
+  favorite = box.favoriteAlbum(); 
+
+  // prints "favorite album is The Who - Tommy"
+  console.log("favorite album is " + favorite); 
+}());
